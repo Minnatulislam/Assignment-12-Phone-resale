@@ -22,5 +22,5 @@ function App() {
 export default App;
 
 
-//npm i react-router-dom react-hot-toast react-hook-form
+
 //npm i  react-day-picker date-fns firebase daisyui  
