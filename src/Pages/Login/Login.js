@@ -29,7 +29,7 @@ const Login = () => {
         console.log(user)
         toast.success('User Login Succussfully')
 
-        // Loin page Create Jwt Token
+        // Loin page Create Jwt Token-----
 
         setLoginUser(data.email)
 
@@ -46,7 +46,7 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        // Google page Create Jwt Token
+        // Google page Create Jwt Token--------
         setLoginUser(user?.email)
         if (user) {
           const userInfo = {
@@ -64,12 +64,12 @@ const Login = () => {
             .then(res => res.json())
             .then(data => {
               if (data.acknowledged) {
-                // setCreateUserEmail(user?.email);
+                // setCreateUserEmail(user?.email);---
                 toast.success('Account Create successfull with save user')
                 navigate(from, { replace: true });
 
               } else {
-                // setCreateUserEmail(user?.email);
+                // setCreateUserEmail(user?.email);----
                 toast.error(data.message)
                 navigate(from, { replace: true });
               }
@@ -102,7 +102,7 @@ const Login = () => {
 
               )}
               className="input input-bordered w-full max-w-xs" />
-            {/* {errors.mail && <p role="alert">{errors.mail?.message}</p>} */}
+            {/* {errors.mail && <p role="alert">{errors.mail?.message}</p>} ---------*/}
 
             {errors.email && <p role="alert" className='text-red-500'>{errors.email.message}  </p>}
           </div>
@@ -114,7 +114,7 @@ const Login = () => {
             </label>
             <input type="password" {...register("password", {
               required: "Not Password vidation",
-              //  maxLength:{value: 1, message:"pleas six digit"}
+              //  maxLength:{value: 1, message:"pleas six digit"}-----
             })}
 
               className="input input-bordered w-full max-w-xs" />
