@@ -1,10 +1,10 @@
 
-# Website Name phone Resale
+## Website Name phone Resale
  ## Webwite live and netlify link : 
  ##admin email:
  ##adminPassword:
  
- #  Website description : 
+ ##  Website description : 
   * first create react app instal and react router 
   * firebase new create new projects and database  mongodb use 
   * framwork use taiwind and  desy ui

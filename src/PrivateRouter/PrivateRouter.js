@@ -4,7 +4,7 @@ import { AuthContext } from '../contexts/AuthProvider';
 import SpennerPage from '../Pages/Shared/SpennerPage/SpennerPage';
 
 
-// Priver router-------
+// Priver router----------
 const PrivateRouter = ({children}) => {
     const {user ,  loding} = useContext(AuthContext)
     const location = useLocation()
