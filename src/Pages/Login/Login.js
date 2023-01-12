@@ -102,7 +102,7 @@ const Login = () => {
 
               )}
               className="input input-bordered w-full max-w-xs" />
-            {/* {errors.mail && <p role="alert">{errors.mail?.message}</p>} ----------*/}
+            {/* {errors.mail && <p role="alert">{errors.mail?.message}</p>} -----------*/}
 
             {errors.email && <p role="alert" className='text-red-500'>{errors.email.message}  </p>}
           </div>

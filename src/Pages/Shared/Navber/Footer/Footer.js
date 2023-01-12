@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaTwitter, FaYoutube,  } from 'react-icons/fa';
 
-/* added footer categories and social icon section ........ */
+/* added footer categories and social icon section ......-.. */
 
 const Footer = () => {
     return (
