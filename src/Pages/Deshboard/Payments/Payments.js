@@ -11,7 +11,7 @@ const Payments = () => {
            const {productName,price,location}=bookingProduct
          
                               
-          const stripePromise = loadStripe(process.env.REACT_APP_StripePublibleKey);
+          const stripePromise = loadStripe(process.env.REACT_APP_StripePublicKey);
 
           
     return (

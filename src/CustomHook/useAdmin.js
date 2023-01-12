@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 
-const useAdmin = email =>{
-  
-    const [isAdmin ,setIsAdmin]=useState(false);
-    const [isAdminLoading , setIsAdminLoading]=useState(true)
-   
-   useEffect(()=>{
+const useAdmin = email => {
 
-        if(email){
+   const [isAdmin, setIsAdmin] = useState(false);
+   const [isAdminLoading, setIsAdminLoading] = useState(true)
 
-           fetch(` https://server-side-215295.vercel.app/users/admin/${email}`)
-           .then(res => res.json())
-           .then(data => {
-                
-            setIsAdmin(data.isAdmin)
-            setIsAdminLoading(false)
-                  
-           })
-        }
- },[email])
-   
- return [isAdmin,isAdminLoading]
+   useEffect(() => {
+
+      if (email) {
+
+         fetch(` https://server-site-12.vercel.app/users/admin/${email}`)
+            .then(res => res.json())
+            .then(data => {
+
+               setIsAdmin(data.isAdmin)
+               setIsAdminLoading(false)
+
+            })
+      }
+   }, [email])
+
+   return [isAdmin, isAdminLoading]
 
 }
 

@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 
-const useBuyer = email =>{
+const useBuyer = email => {
 
-    const [isBuyer ,setIsBuyer]=useState(false);
-    const [buyerLoading , setBuyerLoading]=useState(true)
-   
-   useEffect(()=>{
+   const [isBuyer, setIsBuyer] = useState(false);
+   const [buyerLoading, setBuyerLoading] = useState(true)
 
-        if(email){
+   useEffect(() => {
 
-           fetch(` https://server-side-215295.vercel.app/users/buyer/${email}`)
-           .then(res => res.json())
-           .then(data => {
-                
-            setIsBuyer(data.isBuyer)
+      if (email) {
+
+         fetch(` https://server-site-12.vercel.app/users/buyer/${email}`)
+            .then(res => res.json())
+            .then(data => {
+
+               setIsBuyer(data.isBuyer)
                setBuyerLoading(false)
-                  
-           })
-        }
- },[email])
-   
- return [isBuyer,buyerLoading]
+
+            })
+      }
+   }, [email])
+
+   return [isBuyer, buyerLoading]
 
 }
 
